@@ -11,7 +11,7 @@ A delicate, ink-washed handwritten typeface inspired by archival letters and fou
 | Color — layered, translucent sepia ink | [TTF](fonts/EpistolaryInk-Color.ttf) | [WOFF2](fonts/EpistolaryInk-Color.woff2) |
 | Regular — monochrome, recolorable outlines | [TTF](fonts/EpistolaryInk-Regular.ttf) | [WOFF2](fonts/EpistolaryInk-Regular.woff2) |
 
-Version **0.1.0** contains uppercase A–Z, lowercase a–z and space. Numbers, punctuation, accented characters and alternate glyphs are planned for future versions. The Color edition relies on OpenType COLR/CPAL support; use the Regular edition where color fonts are not supported.
+Version **0.2.0** covers all 95 printable ASCII characters: uppercase A–Z, lowercase a–z, numerals 0–9, 32 punctuation marks, and space. It also includes smart quotes, en/em dashes, a minus sign, and an ellipsis (103 characters total). Accented characters and alternate glyphs are planned for future versions. The Color edition relies on OpenType COLR/CPAL support; use the Regular edition where color fonts are not supported.
 
 ## Web use
 
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python build_font.py
 ```
 
-The source density sheet stores the ink coverage for all 52 glyphs. The builder traces the outlines and creates six overlapping translucent ink layers for the Color edition.
+The source density sheets store the ink coverage for the letters, numerals and punctuation. The builder traces the outlines and creates six overlapping translucent ink layers for the Color edition.
 
 ## License
 
